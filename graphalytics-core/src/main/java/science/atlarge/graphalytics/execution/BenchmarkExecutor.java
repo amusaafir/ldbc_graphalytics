@@ -166,7 +166,7 @@ public class BenchmarkExecutor {
 
 						benchmarkRunResult = runBenchmark(runSpecification);
 						BenchmarkMetrics benchmarkMetrics = benchmarkRunResult.getMetrics();
-						benchmarkMetrics.setLoadTime(new BenchmarkMetric(loadTimeS, "s"));
+						//benchmarkMetrics.setLoadTime(new BenchmarkMetric(loadTimeS, "s"));
 
 						if(benchmarkRunResult != null) {
 							benchmarkSuiteResultBuilder.withBenchmarkResult(benchmarkRunResult);

@@ -181,7 +181,7 @@ public class BenchmarkRunner {
 		// calculate makespan
 		long makespanMS = (benchmarkStatus.getEndOfBenchmark().getTime() - benchmarkStatus.getStartOfBenchmark().getTime());
 		BigDecimal makespanS = (new BigDecimal(makespanMS)).divide(new BigDecimal(1000), 3, BigDecimal.ROUND_CEILING);
-		metrics.setMakespan(new BenchmarkMetric(makespanS, "s"));
+		//metrics.setMakespan(new BenchmarkMetric(makespanS, "s"));
 
 		BenchmarkRunResult benchmarkRunResult =
 				new BenchmarkRunResult(benchmarkRun, benchmarkStatus, new BenchmarkFailures(), metrics);
